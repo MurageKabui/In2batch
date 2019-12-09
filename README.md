@@ -1,8 +1,15 @@
-![GitHub file size in bytes](https://img.shields.io/github/size/Kabue-Murage/In2batch-Commandline-Version-/CL-In2batch.exe?color=Orange&label=File%20size&style=plastic%20size) [![GitHub license](https://img.shields.io/github/license/Kabue-Murage/In2batch-Commandline-Version-?style=plastic%20size)](https://github.com/Kabue-Murage/In2batch-Commandline-Version-/blob/master/LICENSE) ![Discord assistance team](https://img.shields.io/discord/451191843309355008?label=Discord%20forum&style=plastic%20size)
+![GitHub file size in bytes](https://img.shields.io/github/size/Kabue-Murage/In2batch-Commandline-Version-/CL-In2batch.exe?color=Orange&label=File%20size&style=plastic%20size) [![GitHub license](https://img.shields.io/github/license/Kabue-Murage/In2batch-Commandline-Version-?style=plastic%20size)](https://github.com/Kabue-Murage/In2batch-Commandline-Version-/blob/master/LICENSE) 
 
 ## What is In*2*batch ?
 *In2batch* is a program that helps you generate a batch code that allows to store files in a batch script quickly and easily, allowing you to distribute your scripts without their dependencies. 
 
+ **Dependencies/Requirements**
+
+| |   |
+|--|--|
+|**CertUtil.exe** | -_Certutil_.exe is a command-line program that is installed as part of Windows OS Certificate Services. You can use _Certutil_.exe to dump and display certification authority (CA) configuration information, configure Certificate Services, backup and restore CA components, and verify certificates, key pairs, and certificate chains. |
+
+#
 **Syntax and Usage.**
 The program must be present in the `%path%` environment  or in the working directory containing the CL-In2batch.exe executable file. 
  
@@ -20,12 +27,8 @@ The program must be present in the `%path%` environment  or in the working direc
 |*/size*| - Writes the sizes of every **file** in the semi-colon delimited  files array parsed in the first argument .Folders are ignored! Example: `CL-In2batch.exe "CLi.txt;logo.png" -size`|
 ||
 #
-### Dependencies/Requirements 
-| |   |
-|--|--|
-|**CertUtil.exe** | -_Certutil_.exe is a command-line program that is installed as part of Windows OS Certificate Services. You can use _Certutil_.exe to dump and display certification authority (CA) configuration information, configure Certificate Services, backup and restore CA components, and verify certificates, key pairs, and certificate chains. |
 
-#
+
    In the following example,  we are assuming that our working directory has  *"**File1.csv**" "**File2.txt**" "**Logo.ico**" *and a directory  named*  "**Bin**"* which has 3 more files inside.""
 
      CL-In2batch.exe "File1.csv;Logo.ico;Bin" /notify | Clip
