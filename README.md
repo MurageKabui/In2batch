@@ -7,7 +7,7 @@
 
 | |   |
 |--|--|
-|**CertUtil.exe** | -_Certutil_.exe is a command-line program that is installed as part of Windows OS Certificate Services. You can use _Certutil_.exe to dump and display certification authority (CA) configuration information, configure Certificate Services, backup and restore CA components, and verify certificates, key pairs, and certificate chains. |
+|**CertUtil.exe** | -_Certutil_.exe Command-line program installed as part of Windows OS Certificate Services. You can use _Certutil_.exe to dump and display certification authority (CA) configuration information, configure Certificate Services, backup and restore CA components, and verify certificates, key pairs, and certificate chains. |
 
 #
 **Syntax and Usage.**
