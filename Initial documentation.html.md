@@ -1,9 +1,3 @@
----
-
-
----
-
-<p><img src="https://img.shields.io/github/size/Kabue-Murage/In2batch-Commandline-Version-/CL-In2batch.dll?color=Orange&amp;label=File%20size&amp;style=plastic%20size" alt="GitHub file size in bytes"> <a href="https://github.com/Kabue-Murage/In2batch-Commandline-Version-/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Kabue-Murage/In2batch-Commandline-Version-?style=plastic%20size" alt="GitHub license"></a></p>
 <h2 id="what-is-in2batch">What is In<em>2</em>batch</h2>
 <p><em>In2batch</em> is a Windows command-line utility that helps you generate a batch code that allows to store files in a batch script easily, letting you to distribute your scripts without their dependencies, and recreate them on run.</p>
 <h3 id="dependenciesrequirements">Dependencies/Requirements</h3>
