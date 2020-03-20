@@ -5,7 +5,7 @@
 
 <p><img src="https://img.shields.io/github/size/Kabue-Murage/In2batch-Commandline-Version-/CL-In2batch.dll?color=Orange&amp;label=File%20size&amp;style=plastic%20size" alt="GitHub file size in bytes"> <a href="https://github.com/Kabue-Murage/In2batch-Commandline-Version-/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Kabue-Murage/In2batch-Commandline-Version-?style=plastic%20size" alt="GitHub license"></a></p>
 <h2 id="what-is-in2batch">What is In<em>2</em>batch</h2>
-<p><em>In2batch</em> is a Windows command-line utility that helps you generate a batch code that allows to store files in a batch script easily, letting you to distribute your scripts without their dependencies, and recreate them on run.</p>
+<p><em>In2batch</em> is a Windows command-line application that helps you generate a batch code that allows to store files in a batch script easily, letting you to distribute your scripts without their dependencies, and recreate them on run.</p>
 <h3 id="dependenciesrequirements">Dependencies/Requirements</h3>
 
 <table>
@@ -23,13 +23,12 @@
 </tbody>
 </table><h3 id="syntax-and-usage.">Syntax and Usage.</h3>
 <p>The program must be present in the <mark><code>path</code></mark> environment  or in the working directory containing the CL-In2batch.dll executable file.  <br><br>
-• The first argument should contain a FQPN (Full qualified path name) to the file you want to embed in your script. It may be multiple file paths delimited using a semi colon ( ; ) for  a multiple file operation.<br>
-<br><br>
-<code>CL-In2batch.dll /?</code> or <code>CL-In2batch.dll --?</code> or <code>CL-In2batch.dll -?</code></p>
+• The first argument should contain a FQPN (Full qualified path name) to the file you want to embed in your script. It may be multiple file paths delimited using a semi colon ( ; ) for  a multiple file operation.</p>
+<p><code>CL-In2batch.dll /?</code> or <code>CL-In2batch.dll --?</code> or <code>CL-In2batch.dll -?</code></p>
 <blockquote>
 <p>The  above command will print the help information to the standard output  on command prompt .</p>
 </blockquote>
-<p><em>Optional parameters Include :</em></p>
+<p><strong>Optional parameters Include :</strong></p>
 
 <table>
 <thead>
@@ -58,6 +57,29 @@
 <tr>
 <td><em>/size</em></td>
 <td>Prints the sizes of every <strong>file</strong> in the semi-colon delimited  files array parsed in the first argument .Folders are ignored! Example: <br> &gt; <code>CL-In2batch.dll "CLi.txt;logo.png" -size</code></td>
+</tr>
+</tbody>
+</table><p><strong>Other flags :</strong></p>
+
+<table>
+<thead>
+<tr>
+<th><em>Flag</em></th>
+<th><em>Function</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>-srg</em></td>
+<td>Including this flag causes the start region remark to be displayed in the generated batch code. <br> <code>================= Start Region In2Batch CL-Generator ==================</code> <br> Example: <br> <code>CL-In2batch.dll "ABC.txt;ABC.exe" -srg -erg /notify</code></td>
+</tr>
+<tr>
+<td>-erg</td>
+<td>Including this flag causes the end region remark to be displayed in the generated batch code. <br> <code>================ End Region In2Batch CL-Generator =================</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table><p>In the following example,  we are assuming that our working directory has  <em>“<strong>File1.csv</strong>” “<strong>File2.txt</strong>” “<strong>Logo.ico</strong>” <em>and a directory  named</em>  “<strong>Bin</strong>”</em> which has 3 more files inside.""</p>
@@ -93,7 +115,7 @@ where code starts and ends</p>
 </code></pre>
 </li>
 <li class="task-list-item">
-<p><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled="">   Detect file sizes before starting operation. 0 byte files to be skipped automatically without causing an error.</p>
+<p><input type="checkbox" class="task-list-item-checkbox" checked="true" disabled="">   Detect file sizes before starting operation. 0 byte files to be skipped automatically without breaking.</p>
 <pre class=" language-batch"><code class="prism  language-batch"><span class="token comment">rem Assuming that Readme.txt is 0 bytes,this is how it'll be handled;</span>
 <span class="token comment">:: File Readme.txt contains no readable data. Size:0 bytes </span>
 
@@ -121,7 +143,7 @@ where code starts and ends</p>
 </ul>
 <h3 id="exit-codes-parsed-to-dos-system-variable--errorlevel">Exit codes parsed to DOS system variable : %errorlevel%</h3>
 <pre><code> (0) - Success / No Error.
- (1) - One or more files failed ,May be caused by :
+ (1) - One or more files may have failed ,may be caused by :
      - Non existant Filename parsed.
      - Invalid path.
      - File is not opened in read mode or other error.
