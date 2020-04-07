@@ -3,9 +3,9 @@
 
 ---
 
-<p><img src="https://img.shields.io/github/size/Kabue-Murage/In2batch-Commandline-Version-/CL-In2batch.dll?color=Orange&amp;label=File%20size&amp;style=plastic%20size" alt="GitHub file size in bytes"> <a href="https://github.com/Kabue-Murage/In2batch-Commandline-Version-/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Kabue-Murage/In2batch-Commandline-Version-?style=plastic%20size" alt="GitHub license"></a></p>
-<h2 id="what-is-in2batch">What is In<em>2</em>batch</h2>
-<p><em>In2batch</em> is a Windows command-line application that helps you generate a batch code that allows to store files in a batch script easily, letting you to distribute your scripts without their dependencies, and recreate them on run.</p>
+<p><img src="https://img.shields.io/github/size/Kabue-Murage/In2batch-Commandline-Version-/CL-In2batch.dll?color=Orange&amp;label=File%20size&amp;style=plastic%20size" alt="GitHub file size in bytes"> <a href="https://github.com/Kabue-Murage/In2batch-Commandline-Version-/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Kabue-Murage/In2batch-Commandline-Version-?style=plastic%20size" alt="GitHub license"></a><br>
+<br></p>
+<p>Win32 console application that helps you generate a batch code that allows to store files in a batch script easily, letting you to distribute your scripts without their dependencies, and recreate them on run.</p>
 <h3 id="dependenciesrequirements">Dependencies/Requirements</h3>
 
 <table>
@@ -48,15 +48,15 @@
 </tr>
 <tr>
 <td><em>/notify</em></td>
-<td>Including this flag causes a notification after the completion of each file operation. Notifications are not triggered by default unless this flag is included. Example :<br> &gt; <code>CL-In2batch.dll "myfolderA;logo.png" -notify</code></td>
+<td>Including this flag causes a notification after the completion of each file operation. Notifications are not triggered by default unless this flag is included. Example :<br> &gt; <code>CL-In2batch.dll "folderABC;EULA.rtf" -notify</code></td>
 </tr>
 <tr>
 <td>/funcname</td>
-<td>This parameter allows you to customize the function ID in your batch code. Example :<br> &gt; <code>CL-In2batch.dll "myfolderA;Myicon.ico" -funcname "create my files"</code> <br> will result to a DOS callable function called <code>:create_my_files</code>. Leaving out this parameter unused will force the program to generate a unique number instead.</td>
+<td>This parameter allows you to customize the function ID in your batch code. Example :<br> &gt; <code>CL-In2batch.dll "EULA.rtf" -funcname "create eula"</code> <br> will result to a DOS callable function called <code>:create_eula</code>. Leaving out this parameter unused will force the program to generate a unique number instead.</td>
 </tr>
 <tr>
 <td><em>/size</em></td>
-<td>Prints the sizes of every <strong>file</strong> in the semi-colon delimited  files array parsed in the first argument .Folders are ignored! Example: <br> &gt; <code>CL-In2batch.dll "CLi.txt;logo.png" -size</code></td>
+<td>Prints the sizes of every <strong>file</strong> in the semi-colon delimited  files array parsed in the first argument .Folders are ignored! Example: <br> &gt; <code>CL-In2batch.dll "EULA.rtf;License.rtf" -size</code></td>
 </tr>
 </tbody>
 </table><p><strong>Other flags :</strong></p>
