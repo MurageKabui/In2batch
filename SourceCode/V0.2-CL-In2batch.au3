@@ -2,10 +2,6 @@
 #include-once
 
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
-#AutoIt3Wrapper_Icon=..\..\..\my_project\briefcase-24.ico
-#AutoIt3Wrapper_Outfile=C:\Users\$km\Desktop\New folder (2)\20.exe
-#AutoIt3Wrapper_UseUpx=y
-#AutoIt3Wrapper_Res_Description=Generate a batch code that allows you to store files in your batch scripts.
 #AutoIt3Wrapper_Res_Fileversion=2.0.0.0
 #AutoIt3Wrapper_Res_CompanyName=Kabue Murage[Thebateam.org]
 #AutoIt3Wrapper_Res_SaveSource=y
@@ -15,7 +11,6 @@
 #AutoIt3Wrapper_Run_Au3Stripper=y
 #Au3Stripper_Parameters=/mo /sf /rm /sv
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
-;#AutoIt3Wrapper_Change2CUI=y
 
 #cs ===================================================================================
  AutoIt Version  : 3.3.14.5
