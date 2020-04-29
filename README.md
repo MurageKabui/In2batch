@@ -23,7 +23,7 @@
 </tbody>
 </table><h3 id="syntax-and-usage.">Syntax and Usage.</h3>
 <p>The program must be present in the <mark><code>path</code></mark> environment  or in the working directory containing the CL-In2batch.dll executable file.  <br><br>
-• The first argument should contain a FQPN (Full qualified path name) to the file you want to embed in your script. It may be multiple file paths delimited using a semi colon ( ; ) for  a multiple file operation.</p>
+• The first argument should contain a FQPN (Full qualified path name) to the file you want to embed in your script. It may be multiple file or folder paths delimited using a semi colon ( ; ) for  a multiple file operation.</p>
 <p><code>CL-In2batch.dll /?</code> or <code>CL-In2batch.dll --?</code> or <code>CL-In2batch.dll -?</code></p>
 <blockquote>
 <p>The  above command will print the help information to the standard output  on command prompt .</p>
