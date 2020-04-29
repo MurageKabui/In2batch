@@ -71,7 +71,7 @@
 <tbody>
 <tr>
 <td><em>-srg</em></td>
-<td>Including this flag causes the start region remark to be displayed in the generated batch code. <br> <code>================= Start Region In2Batch CL-Generator ==================</code> <br> Example: <br> <code>CL-In2batch.dll "ABC.txt;ABC.exe" -srg -erg /notify</code></td>
+<td>Including this flag causes the start region remark to be displayed in the generated batch code. <br> <code>================= Start Region In2Batch CL-Generator ==================</code> <br> Example: <br> <code>CL-In2batch.dll "EULA.txt;License.rtf" -srg -erg /notify</code></td>
 </tr>
 <tr>
 <td>-erg</td>
@@ -83,7 +83,7 @@
 </tr>
 </tbody>
 </table><p>In the following example,  we are assuming that our working directory has  <em>“<strong>File1.csv</strong>” “<strong>File2.txt</strong>” “<strong>Logo.ico</strong>” <em>and a directory  named</em>  “<strong>Bin</strong>”</em> which has 3 more files inside.""</p>
-<pre><code> CL-In2batch.dll "File1.csv;Logo.ico;Bin" /notify | Clip
+<pre><code> CL-In2batch.dll "EULA.rtf;Logo.ico;Bin" /notify | Clip
 </code></pre>
 <blockquote>
 <p>The above command generates batch code for <strong>File1.csv</strong> ,<strong>File2.txt</strong> , <strong>Logo.ico</strong> and <strong>all the 3 files</strong> present in the directory <strong>Bin</strong>. After each file operation a notification is triggered at the bottom right corner of our screen. The generated code is directly piped to our clipboard after the operation is complete.</p>
