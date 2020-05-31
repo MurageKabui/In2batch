@@ -5,14 +5,14 @@
 
 <p><img src="https://img.shields.io/github/size/Kabue-Murage/In2batch-Commandline-Version-/CL-In2batch.dll?color=Orange&amp;label=File%20size&amp;style=plastic%20size" alt="GitHub file size in bytes"> <a href="https://github.com/Kabue-Murage/In2batch-Commandline-Version-/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Kabue-Murage/In2batch-Commandline-Version-?style=plastic%20size" alt="GitHub license"></a><br>
 <br></p>
-<p>Win32 console application that helps you generate a batch code that allows to store files in a batch script easily, letting you to distribute your scripts without their dependencies, and recreate them on run.</p>
+<p>Win32 console application that helps you generate a batch code that allows to store files in a batch script easily, letting you to distribute your scripts without their dependencies, then recreate them on run.</p>
 <h3 id="dependenciesrequirements">Dependencies/Requirements</h3>
 
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th>Program</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -22,7 +22,7 @@
 </tr>
 </tbody>
 </table><h3 id="syntax-and-usage.">Syntax and Usage.</h3>
-<p>The program must be present in the <mark><code>path</code></mark> environment  or in the working directory containing the CL-In2batch.dll executable file.  <br><br>
+<p>The program must be present in the <mark><code>path</code></mark> environment or alternatively a session should be started in a the working directory containing the CL-In2batch.dll executable file.  <br><br>
 • The first argument should contain a FQPN (Full qualified path name) to the file you want to embed in your script. It may be multiple file or folder paths delimited using a semi colon ( ; ) for  a multiple file operation.</p>
 <p><code>CL-In2batch.dll /?</code> or <code>CL-In2batch.dll --?</code> or <code>CL-In2batch.dll -?</code></p>
 <blockquote>
