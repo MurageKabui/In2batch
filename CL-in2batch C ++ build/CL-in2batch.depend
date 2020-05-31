@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1590710821 source:f:\cpp tutorial\cl-in2batch\main.cpp
+	<iostream>
+	<fstream>
+
