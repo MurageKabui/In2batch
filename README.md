@@ -7,7 +7,7 @@
 <br></p>
 <p>Win32 console application that helps you generate a batch code that allows to store files in a batch script easily, letting you to distribute your scripts without their dependencies, and recreate them on run.</p>
 <h3 id="dependenciesrequirements">Dependencies/Requirements</h3>
-![](Preview.png)
+
 <table>
 <thead>
 <tr>
