@@ -5,7 +5,7 @@
 
 <p><img src="https://img.shields.io/github/size/Kabue-Murage/In2batch-Commandline-Version-/CL-In2batch.dll?color=Orange&amp;label=File%20size&amp;style=plastic%20size" alt="GitHub file size in bytes"> <a href="https://github.com/Kabue-Murage/In2batch-Commandline-Version-/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Kabue-Murage/In2batch-Commandline-Version-?style=plastic%20size" alt="GitHub license"></a><br>
 <br></p>
-<p>Win32 console application that helps you generate a batch code that allows to store files in a batch script easily, letting you to distribute your scripts without their dependencies, then recreate them on run.</p>
+<p>A Win32 console application that helps you generate a batch code that allows to wrap your resource files of any file types in a batch script easily, letting you to distribute your batch files without their dependencies, then recreate them on run.</p>
 <h3 id="dependenciesrequirements">Dependencies/Requirements</h3>
 
 <table>
@@ -28,7 +28,7 @@
 <blockquote>
 <p>The  above command will print the help information to the standard output  on command prompt .</p>
 </blockquote>
-<p><strong>Optional parameters Include :</strong></p>
+<p><strong>Optional parameters :</strong></p>
 
 <table>
 <thead>
@@ -93,5 +93,7 @@
 <blockquote>
 <p>The above command generates the batch code to embed all the files present in the folder  <strong>E:\Batchscripts\Bin</strong>  and redirect the code to a file called <strong>MybatchScript.bat</strong></p>
 </blockquote>
+<h3 id="nb">NB</h3>
+<p>If you’ve ever hit the upper size limit somewhere beyond 350 kB for a single file then your Generated batch will break! This is a pending bug yet to be solved. Feel free to folk and make relevant contribution if need be!</p>
 <p><strong>For more batch scripting plugins visit:</strong> <a href="http://www.thebateam.org">www.thebateam.org</a></p>
 
