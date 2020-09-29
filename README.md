@@ -1,10 +1,15 @@
----
-
-
----
-
+## In2batch Resource Wrapper
 <p><img src="https://img.shields.io/github/size/Kabue-Murage/In2batch-Commandline-Version-/CL-In2batch.dll?color=Orange&amp;label=File%20size&amp;style=plastic%20size" alt="GitHub file size in bytes"> <a href="https://github.com/Kabue-Murage/In2batch-Commandline-Version-/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Kabue-Murage/In2batch-Commandline-Version-?style=plastic%20size" alt="GitHub license"></a><br>
 <br></p>
+
+---
+ <img src="https://github.com/KabueMurage/In2batch/blob/master/GUI_version.PNG?raw=true" align="center" alt="">
+  <br>
+
+---
+
+
+  
 <p>A Win32 console application that helps you generate a batch code that allows to wrap your resource files of any file types in a batch script easily, letting you to distribute your batch files without their dependencies, then recreate them on run.</p>
 <h3 id="dependenciesrequirements">Dependencies/Requirements</h3>
 
