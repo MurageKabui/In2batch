@@ -6,15 +6,16 @@
 ## In2batch Resource Wrapper
 
 
-<p>A Win32 console application that helps you generate a batch code that allows to wrap your resource files of any file types in a batch script easily, letting you to distribute your batch files without their dependencies, then recreate them on run.</p>
+<p>A Win32 console & GUI application that helps you generate a batch code that allows to wrap your resource files of any file types in a batch script easily, letting you to distribute your batch files without their dependencies, then recreate them on run.</p>
 
  <img src="https://github.com/KabueMurage/In2batch/blob/master/GUI_version.PNG?raw=true" align="center" alt="">
   <br>
   
 ---
-<h3 id="dependenciesrequirements">Dependencies/Requirements</h3>
+
 
 ---
+<h3 id="dependenciesrequirements">Dependencies/Requirements</h3>
 
 <table>
 <thead>
