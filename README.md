@@ -1,3 +1,8 @@
+
+<p><img src="https://img.shields.io/github/size/Kabue-Murage/In2batch-Commandline-Version-/CL-In2batch.dll?color=Orange&amp;label=File%20size&amp;style=plastic%20size" alt="GitHub file size in bytes"> <a href="https://github.com/Kabue-Murage/In2batch-Commandline-Version-/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Kabue-Murage/In2batch-Commandline-Version-?style=plastic%20size" alt="GitHub license"></a><br>
+<br></p>
+
+
 ## In2batch Resource Wrapper
 
 
@@ -8,10 +13,6 @@
   
 ---
 <h3 id="dependenciesrequirements">Dependencies/Requirements</h3>
-
-
-<p><img src="https://img.shields.io/github/size/Kabue-Murage/In2batch-Commandline-Version-/CL-In2batch.dll?color=Orange&amp;label=File%20size&amp;style=plastic%20size" alt="GitHub file size in bytes"> <a href="https://github.com/Kabue-Murage/In2batch-Commandline-Version-/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Kabue-Murage/In2batch-Commandline-Version-?style=plastic%20size" alt="GitHub license"></a><br>
-<br></p>
 
 ---
 
