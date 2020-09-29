@@ -29,7 +29,7 @@
 <td>CertUtil (CL) is a program installed as part of Windows OS Certificate Services. You can use <em>Certutil</em> to dump and display certification authority (CA) configuration information, configure Certificate Services, backup and restore CA components, and verify certificates, key pairs, and certificate chains. In this case , CertUtil is used to encode files to base64.</td>
 </tr>
 </tbody>
-</table><h3 id="syntax-and-usage.">Syntax and Usage.</h3>
+</table><h3 id="syntax-and-usage."> (CL) Syntax and Usage.</h3>
 <p>The program must be present in the <mark><code>path</code></mark> environment or alternatively a session should be started in a the working directory containing the CL-In2batch.dll executable file.  <br><br>
 • The first argument should contain a FQPN (Full qualified path name) to the file you want to embed in your script. It may be multiple file or folder paths delimited using a semi colon ( ; ) for  a multiple file operation.</p>
 <p><code>CL-In2batch.dll /?</code> or <code>CL-In2batch.dll --?</code> or <code>CL-In2batch.dll -?</code></p>
