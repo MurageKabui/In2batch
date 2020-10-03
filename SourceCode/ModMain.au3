@@ -32,11 +32,21 @@ Opt("GUIOnEventMode", 1)
 #include <Clipboard.au3>
 #include <Misc.au3>
 #include <GUIConstants.au3>
+
+; #include "_SciLexer.au3"
+; #include <BlockInputEx.au3>
 #include "TheBateamLogo.au3"
+
+
+If _Singleton("BatchLab", 1) = 0 Then
+	If Not WinActive("BatchLab") Then
+		WinActivate("BatchLab", "")
+	EndIf
+	Exit
+EndIf
 
 Global $idBtnClearProcessed, $idHProcessedCode, $idLogPane, $Label_mode, $Label_2mode
 Global $idBtnOptions, $idCopyProc2Clip, $idBtnOptions, $IdBtnSelectFile, $IdBtnClearLogs, $idBtnClearProcessed, $idAdvert
-
 Global $h_gFileSelect
 Global $g_sTool = "In2Batch"
 Local $sControl
@@ -54,12 +64,6 @@ $OnEventMode = True
 Global $sParams = ""
 Global $_Args_
 
-If _Singleton("BatchLab", 1) = 0 Then
-	If Not WinActive("BatchLab") Then
-		WinActivate("BatchLab", "")
-	EndIf
-	Exit
-EndIf
 
 _SetTheme("DarkOrange")
 
@@ -77,11 +81,11 @@ $GUI_FSRestore_BUTTON = $Control_Buttons[5]
 $GUI_MENU_BUTTON = $Control_Buttons[6]
 
 $idHProcessedCode = GUICtrlCreateEdit("", 389, 48, 445, 368)
-GUICtrlSetLimit($idHProcessedCode, 100000000000000)             ;limit for inputip
-GUICtrlSetFont($idHProcessedCode, 9.5, 400, 0, "Consolas")
-GUICtrlSetColor($idHProcessedCode, 0xff7800)
-GUICtrlSetBkColor($idHProcessedCode, 0x191919)
-GUICtrlSetCursor($idHProcessedCode, 5)
+	GUICtrlSetLimit($idHProcessedCode, 100000000000000)             ;limit for inputip
+	GUICtrlSetFont($idHProcessedCode, 9.5, 400, 0, "Consolas")
+	GUICtrlSetColor($idHProcessedCode, 0xff7800)
+	GUICtrlSetBkColor($idHProcessedCode, 0x191919)
+	GUICtrlSetCursor($idHProcessedCode, 5)
 
 $idLogPane = GUICtrlCreateEdit("", 10, 48, 245, 368, $ES_READONLY + $ES_AUTOVSCROLL) ;, $WS_EX_LAYOUTRTL)
 GUICtrlSetLimit($idLogPane, 10000000)              ;limit for input
